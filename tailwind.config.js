@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'satu': '#F5E8C7 ',
-        'dua': '#ECCCB2',
-        'tiga': '#DEB6AB ',
-        'empat': '#AC7088',
-        'lima': '#665A48',
+        'satu': '#F6FAF7 ',
+        'dua': '#E7EAA8',
+        'tiga': '#B4BB72 ',
+        'empat': '#303E27',
+        'lima': '#658361',
       },
     },
   },
