@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <link rel="stylesheet" href="Bahan/keluar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Membabu</title>
+    <link rel="icon" type="image/x-icon" href="bahan/LOGO PKK-1 (2).ico"/>
 
 </head>
 <body class="bg-satu text-empat dark:bg-empat">
     
     <!-- Navbar -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20 py-2 ">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20 py-2 -mt-5 ">
         <div class="container mx-10">
           <div class="flex items-center justify-between relative">
-            <div class="px-4">
-              <a href="#" class="font-bold text-lg text-lima dark:text-satu">PKK</a>
+            <div class="px-4 ">
+              <a href="#" class="font-bold text-lg text-lima dark:text-satu"><img src="Bahan/LOGO PKK-1 (2).ico" alt="" width="60%"></a>
             </div>
             <div class="flex items-center px-4">
               <button id="pilihan" class="block absolute right-4 lg:hidden">
@@ -24,10 +25,10 @@
               <nav id="Menuku" class="hidden absolute py-5 bg-tiga shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent max-w-full lg:shadow-none">
                 <ul class="block lg:flex">
                   <li>
-                    <a href="https://bean791.github.io/AsPi/Kontri.html" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Tentang Kami</a>
-                    <a href="https://bean791.github.io/AsPi/dok.html" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Menu Kami</a>
-                    <a href="https://github.com/Bean791" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Kontak Kami</a>
-                    <button id="tam" class="my-0 text-center"> 
+                    <a href="#tentang" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Tentang Kami</a>
+                    <a href="#menu" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Menu & Paket</a>
+                    <a href="#kontak" class="text-base text-empat py-2 mx-8 dark:hover:text-satu hover:text-black font-bold dark:text-gray-400">Kontak Kami</a>
+                    <button id="tam" class="lg:my-0 my-2  text-center"> 
                       <span id="Mood" class="hidden px-7 py-2 dark:bg-lima rounded-lg dark:text-empat dark:hover:text-satu text-satu transition duration-300"><i class="fa-solid fa-sun"></i></span>
                       <span id="mata"><i class="fa-solid fa-moon px-7 py-2 bg-empat rounded-lg hover:text-lima text-satu transition duration-300"></i></span>
                     </button>
@@ -39,7 +40,7 @@
         </div>
       </header>
       <!-- tentang kami -->
-      <section class="lg:my-64  my-80 mx-3">
+      <section class="lg:my-64  my-80 mx-3" id="tentang">
         <h1 class="content-center text-center lg:text-7xl my-4 text-4xl dark:bg-empat dark:text-satu text-lima">Tentang Kami</h1>
         <p class="m-50 text-center lg:mx-56 dark:bg-empat dark:text-satu text-xs lg:text-lg my-6 font-bold mx-3 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum itaque quam et nihil, libero consequatur alias corrupti pariatur, necessitatibus ipsam veniam eaque dolor accusamus. Iusto alias, quo recusandae cum enim molestiae omnis ipsa, sapiente sunt dolor commodi modi aperiam delectus earum suscipit harum distinctio minus. Commodi consequatur quaerat deserunt?
@@ -50,7 +51,7 @@
       </section>
 
       <!-- Menu -->
-      <section class="mt-80 mb-52" id="event">
+      <section class="mt-80 mb-52" id="menu">
         <h1 class="text-center lg:text-7xl text-4xl font-serif text-lima dark:text-satu tracking-widest mb-20">Menu Kami</h1>
         <div class="grid lg:grid-rows-1 grid-rows-4 grid-flow-col lg:gap-3 gap-12 text-center">
         <div class="p-5 rounded-xl bg-dua text-lima m-5 dark:bg-empat dark:hover:bg-satu dark:text-lime-50 dark:hover:text-lima hover:bg-lima hover:text-satu transition duration-300 ease-in-out">
@@ -80,7 +81,7 @@
       </section>
 
       <!-- Paket -->
-      <section class="mt-80 mb-52" id="event">
+      <section class="mt-80 mb-52">
         <h1 class="text-center lg:text-7xl text-4xl font-serif text-lima dark:text-satu tracking-widest mb-20">Paket Kolab</h1>
         <div class="grid lg:grid-rows-1 grid-rows-4 grid-flow-col lg:gap-3 gap-12 text-center">
         <div class="p-5 rounded-xl bg-dua text-lima m-5 dark:bg-empat dark:hover:bg-satu dark:text-lime-50 dark:hover:text-lima hover:bg-lima hover:text-satu transition duration-300 ease-in-out">
@@ -103,22 +104,34 @@
 
 
       <!-- Kontak -->
-        <section class="mx-10 bg-empat rounded-t-2xl p-5 text-satu dark:bg-lima dark:text-black dark:hover:text-white dark:hover:bg-empat transition duration-500">
-            <h1 class="lg:text-4xl text-4xl text-center font-semibold my-5 lg:my-15 ">Hubungi Kami</h1>
-            <div class="grid lg:grid-rows-1 grid-rows-2 grid-flow-col lg:gap-2 gap-12 text-center  ">
+        <section class="mx-10 bg-empat rounded-t-2xl p-5 text-satu dark:bg-lima dark:text-black dark:hover:text-white dark:hover:bg-empat transition duration-500 hover:bg-satu hover:text-black" id="kontak">
+            <h1 class="lg:text-5xl text-2xl text-center font-semibold my-5 lg:my-15 ">Hubungi Kami</h1>
+            <div class="grid lg:grid-rows-1 grid-rows-3 grid-flow-col lg:gap-3 gap-12 text-center  ">
                 
                 <ul class="mx-5 lg:text-left">
-                    <h2 class="text-xl font-mono text-base my-3">Kelompok 1 XTKJ1</h2>
-                    <li class="my-3">Robin</li>
-                    <li>Jovan</li>
-                    <li class="my-3">Michael</li>
-                    <li>Gilbert</li>
-                    <li class="my-3">Shelin</li>
+                    <h2 class="lg:text-3xl text-xl font-mono my-5">Kelompok 1 XTKJ1</h2>
+                    <li class="my-3 text-xl">Robin</li>
+                    <li class="text-xl">Jovan</li>
+                    <li class="my-3 text-xl">Michael</li>
+                    <li class="text-xl">Gilbert</li>
+                    <li class="my-3 text-xl">Shelin</li>
+                </ul>
+                <ul class="mx-5 lg:text-center">
+                    <h2 class="lg:text-3xl text-xl font-mono  my-5">Navigasi</h2>
+                    <li class="my-3 lg:text-xl text-base">
+                      <a href="#tentang">Tentang</a>
+                    </li>
+                    <li class="my-3 lg:text-xl text-base">
+                      <a href="#menu">Menu & Paket</a>
+                    </li>
+                    <li class="my-3 lg:text-xl text-base">
+                      <a href="#kontak">Kontak</a>
+                    </li>
                 </ul>
                 <ul class="mx-5 lg:text-right">
-                    <h2 class="text-xl font-mono text-base my-3">Hubungi Kami</h2>
-                    <li class="my-3"><a href="#">WA</a></li>
-                    <li class="my-3"><a href="#">IG</a></li>
+                    <h2 class="lg:text-3xl text-xl font-mono my-5">Hubungi Kami</h2>
+                    <li class="my-3 lg:text-xl text-base"><a href="#">WA</a></li>
+                    <li class="my-3 lg:text-xl text-base"><a href="#">IG</a></li>
                 </ul>
                 
             </div>
